@@ -16,5 +16,14 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            if(openFileDialog1.ShowDialog()==DialogResult.OK)
+            {
+                pictureBox1.Image = Image.FromFile(openFileDialog1.FileName);
+                this.Text = string.Concat("visor de imagenes(" + openFileDialog1.FileName + ")");
+            }
+        }
     }
 }
