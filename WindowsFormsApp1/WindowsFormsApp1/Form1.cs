@@ -25,5 +25,17 @@ namespace WindowsFormsApp1
                 this.Text = string.Concat("visor de imagenes(" + openFileDialog1.FileName + ")");
             }
         }
+
+        private void LinkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLabel1.LinkVisited = true;
+            System.Diagnostics.Process.Start("calc");
+        }
+
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLabel2.LinkVisited = true;
+            System.Diagnostics.Process.Start("IExplore", "http://www.ucol.mx");
+        }
     }
 }
