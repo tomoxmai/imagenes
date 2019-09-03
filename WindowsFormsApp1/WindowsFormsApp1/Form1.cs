@@ -37,5 +37,11 @@ namespace WindowsFormsApp1
             linkLabel2.LinkVisited = true;
             System.Diagnostics.Process.Start("IExplore", "http://www.ucol.mx");
         }
+
+        private void LinkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLabel3.LinkVisited = true;
+            System.Diagnostics.Process.Start("C:\\");
+        }
     }
 }
